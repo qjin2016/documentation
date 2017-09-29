@@ -10,7 +10,7 @@ folder: aws
 ---
 
 ## Introduction
-This article explains how to migrate the AWS Email Notification System, which is currently functioning in HPC account. For the architecture of the notification system, please refer to this post: https://cloudmaven.github.io/documentation/aws_cost_notification_system.html
+This article explains how to migrate the AWS Email Notification System, which is currently functioning in HPC account. For the architecture of the notification system, please refer to this post: (https://cloudmaven.github.io/documentation/aws_cost_notification_system.html)
 
 ## Step 1, Set Up Simple Notification Service (SNS)
 During this step, we will create an SNS. The SNS will be able to send emails to subscribers. We will get a Topic ARN, which can be considered as an ID to the SNS. The Lambda service, which we will build up in the following steps, will use the Topic ARN to trigger the SNS.
