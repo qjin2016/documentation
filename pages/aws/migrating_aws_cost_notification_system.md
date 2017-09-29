@@ -10,7 +10,7 @@ folder: aws
 ---
 
 ## Introduction
-This article explains how to migrate the AWS Email Notification System, which is currently functioning in HPC account. For the architecture of the notification system, please refer to this post: (https://cloudmaven.github.io/documentation/aws_cost_notification_system.html)
+This article explains how to migrate the AWS Email Notification System, which is currently functioning in HPC account. For the architecture of the notification system, please refer to this [post](https://cloudmaven.github.io/documentation/aws_cost_notification_system.html)
 
 ## Step 1, Set Up Simple Notification Service (SNS)
 During this step, we will create an SNS. The SNS will be able to send emails to subscribers. We will get a Topic ARN, which can be considered as an ID to the SNS. The Lambda service, which we will build up in the following steps, will use the Topic ARN to trigger the SNS.
@@ -45,7 +45,7 @@ The Lambda is the main component of the notification system. It listens to the S
 
 - Lambda function code:
 
-the Lambda function code can be found here: [https://github.com/qjin2016/documentation/commit/d9e4461f7cd3f6e918b7be7bbb3994ef40a86d88]
+the Lambda function code can be found [here](https://github.com/qjin2016/documentation/commit/d9e4461f7cd3f6e918b7be7bbb3994ef40a86d88)
 
 
 Copy the Python code and paste it into the code section of Lambda page. Find the 'aws_access_key_id' and 'aws_secret_access_key' from the code. Replace their value with your keys. ATTENTION: NEVER PUT YOUR KEYS ON GITHUB OR ANY PUCLIC PLATFORM!!! Then find 'TopicArn' and replace its value with the TopicArn you just created in the SNS section.
