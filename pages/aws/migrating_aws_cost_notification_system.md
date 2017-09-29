@@ -45,7 +45,7 @@ The Lambda is the main component of the notification system. It listens to the S
 
 - Lambda function code:
 
-the Lambda function code can be found here: 
+the Lambda function code can be found here: https://github.com/qjin2016/documentation/commit/d9e4461f7cd3f6e918b7be7bbb3994ef40a86d88
 
 
 
