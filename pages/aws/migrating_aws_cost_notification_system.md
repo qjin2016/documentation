@@ -47,7 +47,7 @@ The Lambda is the main component of the notification system. It listens to the S
 
 - Lambda function code:
 
-the Lambda function code can be found [here](https://github.com/qjin2016/documentation/commit/d9e4461f7cd3f6e918b7be7bbb3994ef40a86d88)
+the Lambda function code can be found [here](https://github.com/qjin2016/documentation/blob/gh-pages/pages/aws/cost_notification_system_code.py)
 
 Copy the Python code and paste it into the code section of Lambda page. Find the 'aws_access_key_id' and 'aws_secret_access_key' from the code. Replace their values with your keys. ATTENTION: NEVER PUT YOUR KEYS ON GITHUB OR ANY PUCLIC PLATFORM!!! Then find 'TopicArn' and replace its value with the TopicArn you just created in the SNS section.
 
