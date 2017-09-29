@@ -456,6 +456,8 @@ def lambda_handler(event, context):
         # print('---------\n')
         # print(untagged)
         
+        # if you do not wish to receive daily summary, commented this out and set: cost_agg_str = ''
+        # also, find the 'Subject=' and set the value to be 'Weekly Cloud Computing Cost Summary'
         cost_agg_str = BeautifulPrint(daily_aggs, daily_untagged, False, daily_total_blend, daily_total_unblend, daily_total_tagged_blend, 
                daily_total_tagged_unblend, daily_total_untagged_blend, daily_total_untagged_unblend)
 
