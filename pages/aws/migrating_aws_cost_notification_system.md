@@ -39,7 +39,7 @@ The Lambda is the main component of the notification system. It listens to the S
 
 - Configure function:
 
-  - type in a name for the Lambda and set the Runtime to be Python 3.6
+  - type in a name for the Lambda and choose the Runtime: Python 3.6
   
 ![pic0006](/documentation/images/aws/migrating_aws_cost_notification_system_006.png)
 
@@ -47,8 +47,13 @@ The Lambda is the main component of the notification system. It listens to the S
 
 the Lambda function code can be found here: https://github.com/qjin2016/documentation/commit/d9e4461f7cd3f6e918b7be7bbb3994ef40a86d88
 
+Copy the Python code and paste it into the code section of Lambda page. Find the 'aws_access_key_id' and 'aws_secret_access_key' from the code. Replace their value with your keys. ATTENTION: NEVER PUT YOUR KEYS ON GITHUB OR ANY PUCLIC PLATFORM!!! Then find 'TopicArn' and replace its value with the TopicArn you just created in the SNS section.
 
+After modifying Python code, go to the Configuration section.
 
+![pic0007](/documentation/images/aws/migrating_aws_cost_notification_system_007.png)
+
+In the 'Advanced settings' part, you can change Memory size and Timeout. The memory size is the memory allocated for running the Lambda function while the Timeout specifies the maximum time that the Lambda function will run. The default memory size is 128 MB, which should be enough for processing billing data. However, the default timeout setting is 10 seconds, which is insuffient for the current job. Increase it to 1 minute should be okay. If you need your Lambda to do a heavier job, make sure you further increase the memory size and timeout. But, Lambda is not designed for computationally expensive job, so keep in mind that one the reasons you go for Lambda is your computational task is lightweight.
 
 ## Heads-up
 
