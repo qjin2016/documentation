@@ -50,6 +50,7 @@ the Lambda function code can be found here: [https://github.com/qjin2016/documen
 
 Copy the Python code and paste it into the code section of Lambda page. Find the 'aws_access_key_id' and 'aws_secret_access_key' from the code. Replace their value with your keys. ATTENTION: NEVER PUT YOUR KEYS ON GITHUB OR ANY PUCLIC PLATFORM!!! Then find 'TopicArn' and replace its value with the TopicArn you just created in the SNS section.
 
+This code also contains instructions of how to mute daily cost summary and send weekly cost summary only. Search 'if you do not wish to receive daily summary ...' from the code and you will find the instructions as part of the annotation.
 
 After modifying Python code, go to the Configuration section.
 
@@ -70,7 +71,7 @@ This section has a dashboard for you to keep track of your Lambda. To find logs 
 
 
 ## Next steps
-
+The current notification system will parse raw billing data and send email notifications. It does not have the functionality to store the parsed information for future reference. It might be useful to keep the parsed information in an S3 bucket.
 
 ## Contact
 
