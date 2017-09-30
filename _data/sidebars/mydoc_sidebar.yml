@@ -318,7 +318,7 @@ entries:
     output: web, pdf
     folderitems:
     
-     - title: UW IOT POC
+     - title: UW IoT POC on AWS
       url: /acs_uwiot_poc.html
       output: web, pdf
 
