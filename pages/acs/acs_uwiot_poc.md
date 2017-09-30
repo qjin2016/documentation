@@ -145,8 +145,8 @@ expected output plot:
 ![pic0002](/documentation/images/acs/acs_uw_iot_002.png)
 
 
-
-
+## Next Steps
+The current SQL server has user name and password protection. To have a more secure SQL server, we could consider limiting the inbound IP connections and establishing a bastion server. 
 
 ## Links
 
