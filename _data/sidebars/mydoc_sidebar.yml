@@ -165,6 +165,10 @@ entries:
     - title: Cost Notification System
       url: /aws_cost_notification_system.html
       output: web, pdf
+      
+    - title: Migrating Cost Notification System
+      url: /migrating_aws_cost_notification_system.html
+      output: web, pdf
     
     - title: EC2
       url: /aws_ec2.html
