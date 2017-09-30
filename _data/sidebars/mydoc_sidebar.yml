@@ -317,6 +317,10 @@ entries:
   - title: AWS Case Studies
     output: web, pdf
     folderitems:
+    
+     - title: UW IOT POC
+      url: /acs_uwiot_poc.html
+      output: web, pdf
 
     - title: Light Sheet Microscope
       url: /acs_light_sheet_microscope.html
