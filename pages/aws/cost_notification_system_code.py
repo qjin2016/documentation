@@ -106,11 +106,11 @@ def FilePicker(contents_list):
     current_d = datetime.datetime.utcnow().today().day
     if current_d <= 6:
         idx1, idx2 = update_dt.index(update_dt[-1]), update_dt.index(update_dt[-2])
-        file_picked = file_list[idx1], file_list[idx2]
+        file_picked = [file_list[idx1], file_list[idx2]]
     else:
         idx = update_dt.index(update_dt[-1])
-        file_picked = file_list[idx]
-    return [file_picked]
+        file_picked = [file_list[idx]]
+    return file_picked
 
 
 # check if the line belongs to today or yesterday's usage
